@@ -1,7 +1,6 @@
 Fork from https://github.com/hooraygith/webpack-oss-plugin
-=========
 
-Transform native ES module to commonjs so that don't need Webpack and Babel
+Transform native ES module to commonjs to remove Webpack and Babel dependencies
 
 
 
