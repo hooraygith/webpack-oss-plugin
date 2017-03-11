@@ -2,6 +2,9 @@ Fork from https://github.com/hooraygith/webpack-oss-plugin
 
 Transform native ES module to commonjs to remove Webpack and Babel dependencies
 
+```bash
+$ npm i webpack-oss-plugin-cjs  --save-dev
+```
 
 
 OSS Plugin
