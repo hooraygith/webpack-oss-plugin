@@ -1,10 +1,45 @@
-Fork from https://github.com/hooraygith/webpack-oss-plugin
+Fork from https://github.com/waijule/webpack-oss-plugin
 
 Transform native ES module to commonjs to remove Webpack and Babel dependencies
 
 ```bash
 $ npm i webpack-oss-plugin-cjs  --save-dev
 ```
+
+
+```javascript
+// webpack.config.js
+
+const OSSPlugin = require('webpack-oss-plugin-cjs')
+
+module.exports = {
+    // ...
+    plugins: [
+        new OSSPlugin({
+
+            // Exclude uploading of html, 
+            exclude: /\.html$/,
+
+            // Include option, also
+            // include: /\.(js|css)$/,
+
+            // ossOptions are required
+            ossOptions: {
+                accessKeyId: 'your id',
+                accessKeySecret: 'your secret',
+                region: 'your region',
+                bucket: 'your bucket',
+            }
+        })
+    ]
+}
+```
+
+
+--------
+
+
+### The following is origin document from https://github.com/waijule/webpack-oss-plugin ：
 
 
 OSS Plugin
